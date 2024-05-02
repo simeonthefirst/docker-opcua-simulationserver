@@ -1,0 +1,7 @@
+services:
+  opcua-server-minimal:
+    build: .
+    container_name: opcua-server-minimal
+    restart: on-failure
+    ports:
+      - "4840:4840"
